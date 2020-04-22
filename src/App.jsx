@@ -1,9 +1,17 @@
 import React from 'react';
-import './App.css';
 import Movie from './Movie';
+import UserProvider from './context/UserProvider';
+import MovieList from './MovieList';
 
 function App() {
-    return <Movie id={3} />;
+    return (
+        <>
+            <Movie id={3} />
+            <UserProvider>
+                <MovieList />
+            </UserProvider>
+        </>
+    );
 }
 
 export default App;
