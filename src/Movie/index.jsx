@@ -6,8 +6,10 @@ import styles from './index.module.css';
 const Movie = ({ showTooltip }) => {
     return (
         <>
-            Movie
+            <span>Movie</span>
+            <br />
             {showTooltip && <div className={styles.tooltip}>Some tooltip</div>}
+            <br />
         </>
     );
 };
