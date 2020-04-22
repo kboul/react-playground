@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import Movie from './Movie';
 
 function App() {
-    return <div className="App">Hello World</div>;
+    return <Movie id={3} />;
 }
 
 export default App;
